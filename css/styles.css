@@ -65,13 +65,14 @@ body {
 .site-nav .link.current {
   color: var(--accent-color);
 }
+/* Main */
 /* hero */
 .hero {
-  outline: 2px solid tomato;
+  text-align: center;
 }
 .hero-title {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -98,8 +99,15 @@ body {
   color: var(--second-accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-/* main */
+.section {
+  /* width: 1200px;
+  margin: 0 auto; */
+  /* padding: 94px 215px; */
+  background-color: tomato;
+}
 .section-title {
+  margin-top: 0;
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.7;
@@ -108,11 +116,17 @@ body {
 }
 /* Benefits */
 .benefits .title {
+  margin-top: 0;
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--title-text-color);
+}
+.benefits .text {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 /* Our team */
 .team .title {
@@ -133,8 +147,6 @@ body {
 /* Footer */
 .address {
   font-style: normal;
-  /* временно для фона */
-  /* background-color: #2f303a; */
   color: var(--second-accent-color);
 }
 .address .link {
@@ -179,9 +191,10 @@ body {
   text-decoration: none;
 }
 .container {
+  padding: 94px 215px;
   width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
+  /* padding-left: 15px;
+  padding-right: 15px; */
   margin: 0 auto;
-  /* outline: 2px solid grey; */
+  outline: 2px solid grey;
 }
