@@ -1,6 +1,6 @@
 /* second text color, headings #212121 */
 /* accents #2196F3, #FFFFFF */
-/* backgrounds #FFFFFF, #F5F4FA */
+/* backgrounds #FFFFFF, #F5F4FA, #2F303A */
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
@@ -8,6 +8,7 @@
   --second-accent-color: #ffffff;
   --background-color: #ffffff;
   --second-background-color: #f5f4fa;
+  --third-background-color: #2f303a;
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -152,8 +153,9 @@ body {
 }
 /* Footer */
 .footer {
-  margin-top: 60px;
-  margin-bottom: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--third-background-color);
 }
 .footer-title {
   margin-top: 0;
