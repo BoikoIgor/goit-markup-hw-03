@@ -161,6 +161,14 @@ body {
   margin-top: 0;
   margin-bottom: 0;
 }
+/* What we do section */
+.photo {
+  margin: -5px;
+  /* или все таки более правильно весь блок через флексбокс делать? */
+}
+.photo + .photo {
+  margin-left: 30px;
+}
 /* Our team */
 .team .list {
   display: flex;
@@ -168,9 +176,7 @@ body {
 .team .content + .content {
   margin-left: 30px;
 }
-/* .team .content  {
-  margin-right: 30px;
-} */
+
 .team .title {
   margin-top: 0;
   margin-bottom: 10px;
