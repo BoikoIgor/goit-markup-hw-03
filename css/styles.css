@@ -45,6 +45,11 @@ body {
   line-height: 1.7;
   color: var(--title-text-color);
 }
+img {
+  display: block;
+  max-width: 100%;
+}
+
 /* Page header */
 .main-nav {
   display: flex;
@@ -163,11 +168,10 @@ body {
   margin-bottom: 0;
 }
 /* What we do section */
-.photo {
-  margin: -5px;
-  /* или все таки более правильно весь блок через флексбокс делать? */
+.photo-wwd {
+  display: flex;
 }
-.photo + .photo {
+.photo.wwd + .photo {
   margin-left: 30px;
 }
 /* Our team */
@@ -187,6 +191,7 @@ body {
   line-height: 1.19;
   text-align: center;
   color: var(--title-text-color);
+  /* outline: 1px solid teal; */
 }
 .team .text {
   margin: 0 auto;
@@ -194,13 +199,17 @@ body {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+  /* outline: 1px solid teal; */
 }
 .team {
   background-color: var(--second-background-color);
 }
-.team .content {
+.team.content {
   width: 270px;
   border-radius: 0px 0px 4px 4px;
+  /* overflow: hidden; */
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   background-color: var(--background-color);
 }
 /* Footer */
