@@ -227,16 +227,19 @@ body {
 }
 /* Portfolio page */
 /* Filter buttons */
-.list.filter {
+.list.filter .item {
+  display: inline-block;
+  margin-bottom: 50px;
+  /* 
+  или
   display: flex;
   justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 50px; */
 }
 .list.filter .item + .item {
   margin-left: 8px;
 }
-.filter button {
-  /* display: inline-block; */
+.list .filter {
   min-width: 73px;
   min-height: 38px;
   padding: 6px 22px;
@@ -253,8 +256,8 @@ body {
   color: var(--title-text-color);
 }
 .filter.current,
-.filter button:hover,
-.filter button:focus {
+.list .filter:hover,
+.list .filter:focus {
   background-color: var(--accent-color);
   color: var(--second-accent-color);
 }
