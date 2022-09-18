@@ -9,6 +9,10 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -42,7 +46,7 @@
     <main>
       <section class="section">
         <div class="container centered">
-          <h1>Портфоліо</h1>
+          <h1 class="portfolio title">Портфоліо. Приклади робіт</h1>
           <ul class="list filter">
             <li class="item">
               <button class="filter current" type="button">Усі</button>
@@ -63,112 +67,156 @@
           <ul class="portfolio list">
             <li class="item">
               <a href="" class="link">
-                <img
-                  class="photo"
-                  src="./images/portfolio/portfolio-1.jpg"
-                  alt="Вебсайт клієнта на екрані ноутбука"
-                  width="370"
-                />
-                <h2 class="portfolio-title">Технокряк</h2>
-                <p class="text">Веб-сайт</p>
+                <div class="card-thumb">
+                  <img
+                    class="photo"
+                    src="./images/portfolio/portfolio-1.jpg"
+                    alt="Вебсайт клієнта на екрані ноутбука"
+                    width="370"
+                  />
+                </div>
+                <div class="card-content">
+                  <h2 class="portfolio-title">Технокряк</h2>
+                  <p class="text">Веб-сайт</p>
+                </div>
               </a>
             </li>
+
             <li class="item">
               <a href="" class="link">
-                <img
-                  class="photo"
-                  src="./images/portfolio/portfolio-2.jpg"
-                  alt="Два баскетболіста боряться за мяч"
-                  width="370"
-                />
-                <h2 class="portfolio-title">
-                  Постер New Orlean vs Golden Star
-                </h2>
-                <p class="text">Дизайн</p>
+                <div class="card-thumb">
+                  <img
+                    class="photo"
+                    src="./images/portfolio/portfolio-2.jpg"
+                    alt="Два баскетболіста боряться за мяч"
+                    width="370"
+                  />
+                </div>
+                <div class="card-content">
+                  <h2 class="portfolio-title">
+                    Постер New Orlean vs Golden Star
+                  </h2>
+                  <p class="text">Дизайн</p>
+                </div>
               </a>
             </li>
+
             <li class="item">
               <a href="" class="link">
-                <img
-                  class="photo"
-                  src="./images/portfolio/portfolio-3.jpg"
-                  alt="Логотип ресторану на фоні риби"
-                  width="370"
-                />
-                <h2 class="portfolio-title">Ресторан Seafood</h2>
-                <p class="text">Додаток</p>
+                <div class="card-thumb">
+                  <img
+                    class="photo"
+                    src="./images/portfolio/portfolio-3.jpg"
+                    alt="Логотип ресторану на фоні риби"
+                    width="370"
+                  />
+                </div>
+                <div class="card-content">
+                  <h2 class="portfolio-title">Ресторан Seafood</h2>
+                  <p class="text">Додаток</p>
+                </div>
               </a>
             </li>
+
             <li class="item">
               <a href="" class="link">
-                <img
-                  class="photo"
-                  src="./images/portfolio/portfolio-4.jpg"
-                  alt="Чорні навушники на білому фоні"
-                  width="370"
-                />
-                <h2 class="portfolio-title">Проєкт Prime</h2>
-                <p class="text">Маркетинг</p>
+                <div class="card-thumb">
+                  <img
+                    class="photo"
+                    src="./images/portfolio/portfolio-4.jpg"
+                    alt="Чорні навушники на білому фоні"
+                    width="370"
+                  />
+                </div>
+                <div class="card-content">
+                  <h2 class="portfolio-title">Проєкт Prime</h2>
+                  <p class="text">Маркетинг</p>
+                </div>
               </a>
             </li>
+
             <li class="item">
               <a href="" class="link">
-                <img
-                  class="photo"
-                  src="./images/portfolio/portfolio-5.jpg"
-                  alt="Дві коробки на білому фоні"
-                  width="370"
-                />
-                <h2 class="portfolio-title">Проєкт Boxes</h2>
-                <p class="text">Додаток</p>
+                <div class="card-thumb">
+                  <img
+                    class="photo"
+                    src="./images/portfolio/portfolio-5.jpg"
+                    alt="Дві коробки на білому фоні"
+                    width="370"
+                  />
+                </div>
+                <div class="card-content">
+                  <h2 class="portfolio-title">Проєкт Boxes</h2>
+                  <p class="text">Додаток</p>
+                </div>
               </a>
             </li>
+
             <li class="item">
               <a href="" class="link">
-                <img
-                  class="photo"
-                  src="./images/portfolio/portfolio-6.jpg"
-                  alt="Вебсайт клієнта на екрані монітора"
-                  width="370"
-                />
-                <h2 class="portfolio-title">Inspiration has no Borders</h2>
-                <p class="text">Веб-сайт</p>
+                <div class="card-thumb">
+                  <img
+                    class="photo"
+                    src="./images/portfolio/portfolio-6.jpg"
+                    alt="Вебсайт клієнта на екрані монітора"
+                    width="370"
+                  />
+                </div>
+                <div class="card-content">
+                  <h2 class="portfolio-title">Inspiration has no Borders</h2>
+                  <p class="text">Веб-сайт</p>
+                </div>
               </a>
             </li>
+
             <li class="item">
               <a href="" class="link">
-                <img
-                  class="photo"
-                  src="./images/portfolio/portfolio-7.jpg"
-                  alt="Розворот журналу на білому фоні"
-                  width="370"
-                />
-                <h2 class="portfolio-title">Видання Limited Edition</h2>
-                <p class="text">Дизайн</p>
+                <div class="card-thumb">
+                  <img
+                    class="photo"
+                    src="./images/portfolio/portfolio-7.jpg"
+                    alt="Розворот журналу на білому фоні"
+                    width="370"
+                  />
+                </div>
+                <div class="card-content">
+                  <h2 class="portfolio-title">Видання Limited Edition</h2>
+                  <p class="text">Дизайн</p>
+                </div>
               </a>
             </li>
+
             <li class="item">
               <a href="" class="link">
-                <img
-                  class="photo"
-                  src="./images/portfolio/portfolio-8.jpg"
-                  alt="Біла бірка товару з назвою проєкта"
-                  width="370"
-                />
-                <h2 class="portfolio-title">Проєкт LAB</h2>
-                <p class="text">Маркетинг</p>
+                <div class="card-thumb">
+                  <img
+                    class="photo"
+                    src="./images/portfolio/portfolio-8.jpg"
+                    alt="Біла бірка товару з назвою проєкта"
+                    width="370"
+                  />
+                </div>
+                <div class="card-content">
+                  <h2 class="portfolio-title">Проєкт LAB</h2>
+                  <p class="text">Маркетинг</p>
+                </div>
               </a>
             </li>
+
             <li class="item">
               <a href="" class="link">
-                <img
-                  class="photo"
-                  src="./images/portfolio/portfolio-9.jpg"
-                  alt="Дві руки людини на клавіатурі працюючого ноутбука"
-                  width="370"
-                />
-                <h2 class="portfolio-title">Growing Business</h2>
-                <p class="text">Додаток</p>
+                <div class="card-thumb">
+                  <img
+                    class="photo"
+                    src="./images/portfolio/portfolio-9.jpg"
+                    alt="Дві руки людини на клавіатурі працюючого ноутбука"
+                    width="370"
+                  />
+                </div>
+                <div class="card-content">
+                  <h2 class="portfolio-title">Growing Business</h2>
+                  <p class="text">Додаток</p>
+                </div>
               </a>
             </li>
           </ul>
