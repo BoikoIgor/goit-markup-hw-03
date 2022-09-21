@@ -44,6 +44,10 @@ body {
   line-height: 1.7;
   color: var(--title-text-color);
 }
+.benefits.section-title,
+.portfolio.section-title {
+  display: none;
+}
 img {
   display: block;
   max-width: 100%;
@@ -61,6 +65,7 @@ img {
 /* Logo */
 .logo {
   font-family: 'Raleway', sans-serif;
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
@@ -121,6 +126,9 @@ img {
 }
 /* Main */
 /* hero */
+.hero {
+  background-color: var(--third-background-color);
+}
 .hero-title {
   margin-top: 0;
   margin-bottom: 30px;
@@ -150,9 +158,6 @@ img {
 }
 
 /* Benefits */
-.benefits.section-title {
-  display: none;
-}
 .benefits.list {
   display: flex;
 }
@@ -170,13 +175,15 @@ img {
 }
 .benefits .text {
   margin: 0;
-  /* margin-bottom: 0; */
 }
-/* What we do section */
-.photo-wwd {
+/* What we do / activities section */
+.activities.section {
+  padding-top: 0;
+}
+.activities-photo {
   display: flex;
 }
-.photo.wwd + .photo {
+.photo + .photo {
   margin-left: 30px;
 }
 /* Our team */
@@ -201,7 +208,7 @@ img {
   text-align: center;
   line-height: 1.17;
   padding: 30px 5px;
-  /* бокові падінги щоб не "прижимався" текст до границь картки */
+  /* бокові падінги щоб не "прижимався" текст до границь картки при заміні*/
 }
 .team {
   background-color: var(--second-background-color);
@@ -212,38 +219,39 @@ img {
   background-color: var(--background-color);
 }
 /* Footer */
+footer {
+  background-color: var(--third-background-color);
+}
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: var(--third-background-color);
 }
-.footer-title {
-  margin-top: 0;
-  margin-bottom: 20px;
+.footer .item {
+  margin-top: 9px;
 }
-.address {
+.footer .address {
+  margin-top: 20px;
+  text-decoration: none;
   font-style: normal;
   color: var(--second-accent-color);
 }
 .address .link {
-  margin-top: 9px;
-  text-decoration: none;
+  /* margin-top: 9px; */
+  text-decoration: inherit;
   color: rgba(255, 255, 255, 0.6);
 }
 .address .link:hover,
-.address .link:focus {
+.address .link:focus,
+.address .address:hover,
+.address .address:focus {
   color: var(--accent-color);
 }
 /* Portfolio page */
-.portfolio.title {
-  display: none;
-}
 /* Filter buttons */
 .list.filter .item {
   display: inline-block;
   margin-bottom: 50px;
-  /* 
-  или
+  /* или
   display: flex;
   justify-content: center;
   margin-bottom: 50px; */
@@ -314,6 +322,6 @@ img {
   border-top: none;
 }
 /* на перспективу, для ефектів картинки: */
-.card-thumb {
+/* .card-thumb {
   overflow: hidden;
-}
+} */
