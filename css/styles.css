@@ -41,7 +41,7 @@ body {
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.7;
+  line-height: 1.17;
   color: var(--title-text-color);
 }
 .benefits.section-title,
@@ -129,6 +129,11 @@ img {
 .hero {
   background-color: var(--third-background-color);
 }
+.hero .container {
+  max-width: 696px;
+  text-align: center;
+  padding: 200px 0;
+}
 .hero-title {
   margin-top: 0;
   margin-bottom: 30px;
@@ -160,6 +165,11 @@ img {
 /* Benefits */
 .benefits.list {
   display: flex;
+  justify-content: space-between;
+}
+.benefits .item {
+  /* 270px баранья я башка, не проверил))) */
+  width: calc((100% - 90px) / 4);
 }
 .benefits .item + .item {
   margin-left: 30px;
@@ -222,7 +232,7 @@ img {
 footer {
   background-color: var(--third-background-color);
 }
-.footer {
+footer {
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -250,11 +260,9 @@ footer {
 /* Filter buttons */
 .list.filter .item {
   display: inline-block;
+}
+.list.filter {
   margin-bottom: 50px;
-  /* или
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px; */
 }
 .list.filter .item + .item {
   margin-left: 8px;
